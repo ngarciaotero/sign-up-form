@@ -41,9 +41,9 @@ body {
 circle {
   fill: none;
   stroke: url(#GradientColor);
-  stroke-width: 6px;
-  stroke-dasharray: 415;
-  stroke-dashoffset: 415;
+  stroke-width: 20px;
+  stroke-dasharray: 1570;
+  stroke-dashoffset: 1570;
   animation: anim 2s linear forwards;
 }
 
@@ -52,6 +52,10 @@ svg {
   top: 0;
   left: 0;
   z-index: -1;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 @keyframes anim {

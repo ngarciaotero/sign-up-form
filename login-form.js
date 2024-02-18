@@ -19,8 +19,15 @@ inputs.forEach((input) => {
   });
 });
 
+function updateProgress() {
+  let validInputs = 0;
 
-function updateProgress(percent) {
+  inputs.forEach((input) => {
+    if (input.checkValidity()) {
+      validInputs++;
+    }
+  });
+  const percent = (validInputs / inputs.length) * 100;
   const offset = 1570 - (percent / 100) * 1570;
   progressCircle.style.strokeDashoffset = offset;
   progressCircle.style.strokeWidth = 20;

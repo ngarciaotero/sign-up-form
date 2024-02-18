@@ -1,5 +1,3 @@
-const passwordInput = document.getElementById("password");
-const confirmPasswordInput = document.getElementById("confirm-password");
 const inputs = document.querySelectorAll("input");
 const progressCircle = document.querySelector("circle");
 

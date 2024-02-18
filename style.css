@@ -4,7 +4,6 @@
 }
 
 body {
-  background: #e3edf7;
   height: 100vh;
   display: flex;
   justify-items: center;
@@ -80,4 +79,20 @@ input.valid {
 input.invalid {
   border-color: white;
   box-shadow: 0 0 10px #dc3545;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

@@ -19,7 +19,8 @@ inputs.forEach((input) => {
   });
 });
 
-function updateProgress() {
+
+function updateProgress(percent) {
   const offset = 1570 - (percent / 100) * 1570;
   progressCircle.style.strokeDashoffset = offset;
   progressCircle.style.strokeWidth = 20;

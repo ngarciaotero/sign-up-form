@@ -58,12 +58,6 @@ svg {
   min-height: 100%;
 }
 
-@keyframes anim {
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
 @media (max-width: 600px) {
   .outer {
     height: 500px;

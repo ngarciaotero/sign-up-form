@@ -15,13 +15,6 @@ inputs.forEach((input) => {
   });
 });
 
-// function initializeProgressBar() {
-//   const initialOffset = 1570;
-//   progressCircle.style.strokeDasharray = initialOffset;
-// }
-
-// window.addEventListener("load", initializeProgressBar);
-
 function updateProgress() {
   let validInputs = 0;
 

@@ -25,6 +25,11 @@ function updateProgress() {
   const offset = 1570 - (percent / 100) * 1570;
   progressCircle.style.strokeDashoffset = offset;
   progressCircle.style.strokeWidth = 20;
+
+  // Enable create account btn if all input fields are valid
+  if (validInputs === inputs.length) {
+    enableCreateAccountBtn();
+  }
 }
 
 function validatePassword() {
@@ -35,5 +40,11 @@ function validatePassword() {
   } else {
     confirmPasswordInput.classList.remove("valid");
     confirmPasswordInput.classList.add("invalid");
+    updateProgress();
   }
+}
+
+function enableCreateAccountBtn() {
+  const createAccountBtn = document.querySelector(".create-account-btn");
+  createAccountBtn.disabled = false;
 }

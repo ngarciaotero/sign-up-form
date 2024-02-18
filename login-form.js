@@ -28,3 +28,14 @@ function updateProgress() {
   progressCircle.style.strokeDashoffset = offset;
   progressCircle.style.strokeWidth = 20;
 }
+
+function validatePassword() {
+  const passwordInput = document.getElementById("password");
+  const confirmPasswordInput = document.getElementById("confirm-password");
+  if (passwordInput.value === confirmPasswordInput.value) {
+    updateProgress();
+  } else {
+    confirmPasswordInput.classList.remove("valid");
+    confirmPasswordInput.classList.add("invalid");
+  }
+}

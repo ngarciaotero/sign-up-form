@@ -1,7 +1,3 @@
-const firstNameInput = document.getElementById("first-name");
-const lastNameInput = document.getElementById("last-name");
-const emailInput = document.getElementById("email");
-const phoneNumberInput = document.getElementById("phone-number");
 const passwordInput = document.getElementById("password");
 const confirmPasswordInput = document.getElementById("confirm-password");
 const inputs = document.querySelectorAll("input");

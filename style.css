@@ -40,7 +40,7 @@ body {
 
 circle {
   fill: none;
-  stroke: url(#GradientColor);
+  stroke: url(#GalaxyGradient);
   stroke-dasharray: 1570;
   stroke-dashoffset: 1570;
 }

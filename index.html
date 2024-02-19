@@ -17,32 +17,36 @@
         <div class="inner">
           <form>
             <div class="full-name">
-              <label for="first-name">First Name *</label>
-              <input
-                type="text"
-                name="first-name"
-                id="first-name"
-                minlength="2"
-                maxlength="30"
+              <div class="fname-container">
+                <label for="first-name">First Name *</label>
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  minlength="2"
+                  maxlength="30"
                 size="25"
-                pattern="^[A-Za-z ]+$"
-                onchange="updateProgress()"
-                required
-              />
-              <label for="last-name">Last Name *</label>
-              <input
-                type="text"
-                name="last-name"
-                id="last-name"
-                minlength="2"
-                maxlength="40"
+                  pattern="^[A-Za-z ]+$"
+                  onchange="updateProgress()"
+                  required
+                />
+              </div>
+              <div class="lname-container">
+                <label for="last-name">Last Name *</label>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  minlength="2"
+                  maxlength="40"
                 size="25"
-                pattern="^[A-Za-z ]+$"
-                onchange="updateProgress()"
-                required
-              />
+                  pattern="^[A-Za-z ]+$"
+                  onchange="updateProgress()"
+                  required
+                />
+              </div>
             </div>
-            <div>
+            <div class="email-container">
               <label for="email">Email *</label
               ><input
                 type="email"
@@ -53,7 +57,7 @@
                 required
               />
             </div>
-            <div>
+            <div class="phone-container">
               <label for="phone-number">Phone Number *</label>
               <input
                 type="tel"
@@ -65,23 +69,27 @@
                 required
               />
             </div>
-            <div>
-              <label for="password">Password *</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                onchange="updateProgress()"
-                required
-              />
-              <label for="confirm-password">Confirm Password *</label>
-              <input
-                type="password"
-                id="confirm-password"
-                name="confirm-password"
-                oninput="validatePassword()"
-                required
-              />
+            <div class="passwords">
+              <div class="nonconfirm-container">
+                <label for="password">Password *</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  onchange="updateProgress()"
+                  required
+                />
+              </div>
+              <div class="confirm-container">
+                <label for="confirm-password">Confirm Password *</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  oninput="validatePassword()"
+                  required
+                />
+              </div>
             </div>
             <div>
               <button class="create-account-btn" disabled>

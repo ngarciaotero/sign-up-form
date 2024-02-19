@@ -67,6 +67,22 @@ svg {
   }
 }
 
+label,
+p {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+label:focus {
+  box-shadow: 1px 1px 2px #ffffff;
+}
+
+input:focus {
+  border-color: #f8f7f4;
+  outline: 3px solid #fcfcfc9c;
+}
+
 input {
   border-color: white;
   border-radius: 10px;

@@ -73,13 +73,15 @@ input {
 }
 
 input.valid {
-  border-color: white;
-  box-shadow: 0 0 10px #f9f903;
+  border-color: rgb(247, 227, 0);
+  outline: 1px solid #f0e007;
+  box-shadow: 0 0 20px #f9f903;
 }
 
 input.invalid {
-  border-color: white;
-  box-shadow: 0 0 10px #dc3545;
+  border-color: rgb(253, 0, 0);
+  outline: 1px solid #ff00009c;
+  box-shadow: 0 0 20px #ff011a;
 }
 
 .video-container {

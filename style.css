@@ -87,20 +87,24 @@ input:focus {
 }
 
 input {
-  border-color: white;
+  border-color: rgb(198, 196, 196);
   border-radius: 10px;
+  background-color: rgb(254, 245, 232);
+  font-size: 15px;
+  font-family: "Anta", sans-serif;
 }
 
 input.valid {
   border-color: rgb(247, 227, 0);
   outline: 1px solid #f0e007;
-  box-shadow: 0 0 20px #f9f903;
+  box-shadow: 0 0 20px #eded9a;
 }
 
 input.invalid {
   border-color: rgb(253, 0, 0);
   outline: 1px solid #ff00009c;
   box-shadow: 0 0 20px #ff011a;
+  background-color: rgb(247, 161, 161);
 }
 
 .video-container {

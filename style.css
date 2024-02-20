@@ -137,3 +137,21 @@ input.invalid {
   gap: 14px;
   margin-bottom: 15px;
 }
+
+.create-account-btn {
+  margin: auto;
+  display: block;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 19px;
+  font-family: "Anta", sans-serif;
+}
+
+.create-account-btn:disabled {
+  background-color: rgb(147, 145, 145);
+}
+
+.create-account-btn:enabled {
+  background: linear-gradient(to right, #0000ff, #4b0082, #9400d3);
+  color: thistle;
+}

@@ -119,7 +119,7 @@ input.invalid {
 .full-name,
 .passwords {
   display: flex;
-  justify-content: space-between;
+  gap: 100px;
 }
 
 .fname-container,

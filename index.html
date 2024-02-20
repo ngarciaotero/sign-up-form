@@ -25,7 +25,7 @@
                   id="first-name"
                   minlength="2"
                   maxlength="30"
-                size="25"
+                  size="30"
                   pattern="^[A-Za-z ]+$"
                   onchange="updateProgress()"
                   required
@@ -39,7 +39,7 @@
                   id="last-name"
                   minlength="2"
                   maxlength="40"
-                size="25"
+                  size="30"
                   pattern="^[A-Za-z ]+$"
                   onchange="updateProgress()"
                   required
@@ -52,7 +52,8 @@
                 type="email"
                 name="email"
                 id="email"
-                placeholder="demo@example.com"
+                size="40"
+                placeholder="  demo@example.com"
                 onchange="updateProgress()"
                 required
               />
@@ -63,7 +64,8 @@
                 type="tel"
                 id="phone-number"
                 name="phone-number"
-                placeholder="ex: +1 888 123 4567"
+                size="40"
+                placeholder="  ex: +1 888 123 4567"
                 pattern="(\+\d{1,2}\s?)?\d{3}\s?\d{3}\s?\d{4}"
                 onchange="updateProgress()"
                 required
@@ -76,6 +78,7 @@
                   type="password"
                   id="password"
                   name="password"
+                  size="30"
                   onchange="updateProgress()"
                   required
                 />
@@ -86,6 +89,7 @@
                   type="password"
                   id="confirm-password"
                   name="confirm-password"
+                  size="30"
                   oninput="validatePassword()"
                   required
                 />
